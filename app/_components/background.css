@@ -1,0 +1,21 @@
+.background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  min-height: 100dvh;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  min-height: 100dvh;
+  z-index: -1;
+}

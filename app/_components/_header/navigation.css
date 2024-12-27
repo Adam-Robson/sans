@@ -1,0 +1,66 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks {
+  padding: 0.6rem;
+}
+
+.navlink {
+  margin: 0.48rem;
+  font-size: calc(0.6rem + 1.5vmin);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: smoothColorCycle 13s ease-in-out infinite,
+    opacityCycle 8s ease-in-out infinite;
+}
+
+@keyframes smoothColorCycle {
+  0%,
+  100% {
+    color: var(--text-0);
+    filter: brightness(0.9);
+  }
+  50% {
+    color: var(--primary-0);
+    filter: brightness(1);
+  }
+}
+
+@keyframes opacityCycle {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navlinks a:nth-child(1) {
+  animation-delay: 1s;
+}
+.navlinks a:nth-child(2) {
+  animation-delay: 3s;
+}
+.navlinks a:nth-child(3) {
+  animation-delay: 5s;
+}
+.navlinks a:nth-child(4) {
+  animation-delay: 7s;
+}
+.navlinks a:nth-child(5) {
+  animation-delay: 2s;
+}

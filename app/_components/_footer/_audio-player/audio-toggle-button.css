@@ -1,0 +1,29 @@
+.audio-toggle {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.toggle-button {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.toggle-button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-label {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-button:hover .toggle-label {
+  opacity: 1;
+}

@@ -1,0 +1,55 @@
+.audio-player {
+  position: relative;
+  max-width: 24rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.player-card {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 18rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(13px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.player-card.visible {
+  bottom: 20%;
+  backdrop-filter: hue-rotate(210deg), blur(13px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.now-playing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.song-timing {
+  text-align: center;
+  font-size: 0.9rem;
+}

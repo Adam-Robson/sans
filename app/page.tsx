@@ -5,6 +5,7 @@ import "./page.css";
 export default function Home() {
   return (
     <div className="homepage">
+      <div className="background"></div>
       <Header />
       <Footer />
     </div>

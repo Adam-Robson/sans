@@ -3,3 +3,18 @@
   width: 100%;
   min-height: 100vh;
 }
+
+.background {
+  min-height: 100dvh;
+  width: 100%;
+  background-image: url("/images/stripes.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  z-index: -1;
+  filter: blur(2px);
+  opacity: 0.6;
+}

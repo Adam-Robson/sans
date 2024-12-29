@@ -5,6 +5,8 @@ import "./tetriz.css";
 export default function Page() {
   return (
     <div className="page-container">
+      <h1 className="title">Tetriz</h1>
+
       <GameProvider>
         <Tetriz />
       </GameProvider>

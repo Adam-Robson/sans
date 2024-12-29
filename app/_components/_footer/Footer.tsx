@@ -1,4 +1,4 @@
-import { AudioProvider } from "@/app/_contexts/AudioProvider";
+import { AudioProvider } from "@/_contexts/AudioProvider";
 import AudioPlayer from "./_audio-player/AudioPlayer";
 import "./footer.css";
 

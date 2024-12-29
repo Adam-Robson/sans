@@ -1,6 +1,5 @@
 import React from "react";
 import type { IControlsProps } from "../types/controls";
-import Button from "./Button";
 import "./controls.css";
 
 export default function Controls({
@@ -10,14 +9,12 @@ export default function Controls({
   handleStartGame,
 }: IControlsProps) {
   return (
-    <div className="buttons">
-      {running && togglePause && (
-        <Button onClick={togglePause} text={`Pause`} />
-      )}
+    <div className="controls">
+      {running && togglePause && <button onClick={togglePause}>Pause</button>}
       {running ? (
-        <Button text={`Reset`} onClick={resetGame} />
+        <button onClick={resetGame}>Reset</button>
       ) : (
-        <Button text={`Start`} onClick={handleStartGame} />
+        <button onClick={handleStartGame}>Start</button>
       )}
     </div>
   );

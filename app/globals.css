@@ -6,3 +6,21 @@ body {
   background-color: var(--background-0);
   color: var(--text-0);
 }
+
+button {
+  margin-top: 0.6rem;
+  background-color: var(--background-0);
+  color: var(--text-0);
+  border: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary-0);
+  color: var(--text-2);
+  border: var(--text-2) solid 2px;
+  cursor: pointer;
+}

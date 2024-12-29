@@ -11,7 +11,9 @@ export default function Instructions() {
 
   return (
     <div className="instructions-container">
-      <button onClick={toggleVisibility}>Instructions</button>
+      <button className="instructions-button" onClick={toggleVisibility}>
+        Instructions
+      </button>
       <div className={`instructions-card ${visible ? "visible" : ""}`}>
         <h3 className="instructions-title">Instructions</h3>
         <ol className="instructions">

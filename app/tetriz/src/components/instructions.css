@@ -1,3 +1,10 @@
+.instructions-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .instructions-card {
   height: 100%;
   width: 300px;
@@ -5,8 +12,8 @@
   top: 0;
   right: -100%;
   padding: 1rem;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px hsla(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out;
   background-color: var(--background-1);
 }
 

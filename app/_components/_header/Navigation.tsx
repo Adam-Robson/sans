@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navigation } from "@/app/_constants/navigation";
+import { navigation } from "@/_constants/navigation";
 import "./navigation.css";
 
 export default function Navigation() {

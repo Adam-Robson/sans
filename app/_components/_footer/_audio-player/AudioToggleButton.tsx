@@ -1,7 +1,7 @@
 "use client";
 
 import { FiX, FiSpeaker } from "react-icons/fi";
-import type { IAudioPlayerToggleProps } from "@/app/_types/audio-provider";
+import type { IAudioPlayerToggleProps } from "@/_types/audio-provider";
 import "./audio-toggle-button.css";
 
 export default function AudioToggleButton({

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getBooks } from "../_services/books";
 import "./books.css";
 import { FiChevronsLeft } from "react-icons/fi";
+import DarkModeImage from "@/_components/DarkModeImage";
 
 export async function generateStaticParams() {
   const books = await getBooks();
@@ -17,7 +18,13 @@ export default async function BooksPage() {
       <Link href="/">
         <FiChevronsLeft size={32} />
       </Link>
+      <DarkModeImage
+        darkSrc="/images/subtitle_drk.svg"
+        lightSrc="/images/subtitle_lt.svg"
+        alt="le fog subtitle"
+      />
       <h1 className="books-title">books for reading</h1>
+
       <ul className="book-list">
         {books.map((book) => (
           <li key={book.id} className="book-list-item">

@@ -1,12 +1,16 @@
 import Navigation from "./Navigation";
-import Logo from "./Logo";
+// import DarkModeImage from "@/_components/DarkModeImage";
 import "./header.css";
 
 export default function Header() {
   return (
     <header className="header">
       <Navigation />
-      <Logo src="/images/bow.webp" alt="le fog logo" />
+      {/* <DarkModeImage
+        darkSrc="/images/subtitle_drk.svg"
+        lightSrc="/images/subtitle_lt.svg"
+        alt="le fog subtitle"
+      /> */}
     </header>
   );
 }

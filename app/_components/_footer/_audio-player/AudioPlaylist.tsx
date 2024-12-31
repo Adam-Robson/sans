@@ -1,6 +1,6 @@
-import { useAudioContext } from "@/app/_contexts/AudioProvider";
-import { playlist } from "@/app/_contexts/AudioProvider";
-import { ISong } from "@/app/_types/audio-provider";
+import { useAudioContext } from "@/_contexts/AudioProvider";
+import { playlist } from "@/_contexts/AudioProvider";
+import { ISong } from "@/_types/audio-provider";
 import "./audio-playlist.css";
 
 export default function AudioPlaylist() {

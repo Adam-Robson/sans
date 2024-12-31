@@ -1,0 +1,51 @@
+.instructions-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-card {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  padding: 1rem;
+  box-shadow: -2px 0 5px hsla(0, 0, 0, 0.5);
+  transition: right 0.5s ease-in-out;
+  background-color: var(--background-1);
+}
+
+.instructions-card.visible {
+  right: 0;
+  z-index: 2;
+}
+
+.instructions {
+  padding: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  list-style-type: lower-roman;
+}
+
+.paused-overlay,
+.gameover-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.7rem;
+  color: var(--accent-3);
+  text-align: center;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+}
+
+.gameboard.paused {
+  opacity: 0.5;
+  pointer-events: none;
+}

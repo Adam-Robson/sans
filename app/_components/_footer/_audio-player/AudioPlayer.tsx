@@ -3,8 +3,8 @@
 import { useState } from "react";
 import AudioControls from "./AudioControls";
 import AudioPlaylist from "./AudioPlaylist";
-import AudioToggleButton from "@/app/_components/_footer/_audio-player/AudioToggleButton";
-import { useAudioContext } from "@/app/_contexts/AudioProvider";
+import AudioToggleButton from "@/_components/_footer/_audio-player/AudioToggleButton";
+import { useAudioContext } from "@/_contexts/AudioProvider";
 import "./audio-player.css";
 
 export default function AudioPlayer() {

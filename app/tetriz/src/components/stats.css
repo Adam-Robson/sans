@@ -1,0 +1,10 @@
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

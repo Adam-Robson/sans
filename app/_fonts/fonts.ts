@@ -6,4 +6,10 @@ const inconsolata = localFont({
   display: "swap",
 });
 
-export { inconsolata };
+const sourceCode = localFont({
+  src: "./Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf",
+  variable: "--source-code",
+  display: "swap",
+});
+
+export { inconsolata, sourceCode };

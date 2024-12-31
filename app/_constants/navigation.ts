@@ -21,8 +21,8 @@ export const navigation = [
   },
   {
     id: 5,
-    title: "tetrix",
-    url: "/tetrix",
+    title: "tetriz",
+    url: "/tetriz",
   },
   {
     id: 6,

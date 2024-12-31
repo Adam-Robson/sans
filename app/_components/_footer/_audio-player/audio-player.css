@@ -30,9 +30,10 @@
 
 .player-card.visible {
   bottom: 20%;
-  backdrop-filter: hue-rotate(210deg), blur(13px);
   opacity: 1;
   visibility: visible;
+  background-color: var(--primary-1);
+  color: var(--background-2);
 }
 
 .now-playing {

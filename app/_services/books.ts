@@ -16,30 +16,13 @@ export async function getBooks() {
 }
 
 export async function getBookById(id: string) {
-  if (!id) {
-    throw new Error("A book ID is required to view a book.");
+  const { data: book, error } = await client
+    .from("books-table")
+    .select("*")
+    .eq("id", id);
+
+  if (error) {
+    throw new Error(`Error fetching book with ID ${id}: ${error.message}`);
   }
-
-  try {
-    const res = await client
-      .from("books-table")
-      .select("*")
-      .match({ id })
-      .single();
-
-    if (res.error) {
-      throw new Error(
-        `Error fetching book with ID ${id}: ${res.error.message}`
-      );
-    }
-
-    if (!res.data) {
-      throw new Error(`Book with ID ${id} not found`);
-    }
-
-    return res.data;
-  } catch (error) {
-    console.error(error);
-    throw new Error(`Failed to fetch book with ID ${id}`);
-  }
+  return book[0];
 }

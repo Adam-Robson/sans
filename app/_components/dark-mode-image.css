@@ -1,0 +1,15 @@
+.dark-mode-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: var(--light-src);
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode-image {
+    background-image: var(--dark-src);
+  }
+}

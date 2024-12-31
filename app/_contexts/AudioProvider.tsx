@@ -14,7 +14,7 @@ import { Howl, Howler } from "howler";
 import type {
   IAudioContext,
   IAudioProviderProps,
-} from "@/app/_types/audio-provider";
+} from "@/_types/audio-provider";
 
 export const playlist = [
   {

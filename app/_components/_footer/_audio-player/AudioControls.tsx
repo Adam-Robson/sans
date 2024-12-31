@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAudioContext } from "@/app/_contexts/AudioProvider";
+import { useAudioContext } from "@/_contexts/AudioProvider";
 import {
   FiPlay,
   FiPause,
